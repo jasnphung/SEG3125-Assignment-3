@@ -15,7 +15,7 @@ import { GameProvider } from '@/context/GameContext'
 // });
 
 export const metadata: Metadata = {
-  title: "Memory Game",
+  title: "Quick Match"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
