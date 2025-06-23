@@ -14,12 +14,12 @@ export default function HomePage() {
 
   const handleLevelSelect = (level: string) => {
     setSelectedLevel(level);
-    setLevel(level as any);
+    setLevel(level as 'easy' | 'medium' | 'hard');
   };
 
   const handleThemeSelect = (theme: string) => {
     setSelectedTheme(theme);
-    setTheme(theme as any);
+    setTheme(theme as 'animals' | 'fruits');
   };
 
   const handleStart = (e: React.FormEvent) => {

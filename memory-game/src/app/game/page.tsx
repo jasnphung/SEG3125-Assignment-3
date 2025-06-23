@@ -23,7 +23,7 @@ export default function GamePage() {
   }, [level, theme]);
 
   useEffect(() => {
-    let timer: any;
+    let timer: NodeJS.Timeout;
     if (timerStarted && !gameOver) {
       timer = setInterval(() => setTime((t) => t + 1), 1000);
     }
